@@ -1,0 +1,219 @@
+.container{
+    background-image: url(../img/Recurso_17.png);
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.bar-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-basis: 100%;
+    border-bottom: 1px solid $color-grey-dark;
+    font-weight: bold;
+
+    &__dispaly-name{
+        height: auto;
+        color: $color-grey-dark;
+        font-size: $font-size-bar-top;
+        flex-basis: 100%;
+        padding: 1rem 2rem;
+    }
+
+    &__main{
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 2rem;
+    }
+
+    &__logo{
+        align-self: baseline;
+    }
+
+    &__users{
+        display: flex;
+        align-items: center;
+    }
+
+    &__users-info{
+        margin-right: 1.5rem;
+        
+        &--name{
+            font-size: $font-size-bar-top;
+            color: $color-grey-dark;
+        }
+
+        &--type{
+            font-size: $font-size-small-bar-top;
+            color: $color-grey-light-1;
+            text-align: right;
+        }
+    }
+
+    &__users-icon{
+        font-size: $font-size-icon-bar-top;
+        color: $color-blue-dark;
+    }
+}
+
+.nav-bar{
+    flex-basis: 20%;
+    color: $color-grey-dark;
+    border-right: 1px solid $color-grey-dark;;
+    max-width: 20rem;
+    font-weight: bold;
+
+    &__item{
+        display: flex;
+        font-size: $font-size-bar-top;
+        padding: 2rem;
+
+        &--icon{
+            margin-right: 1rem;
+            font-size: 2rem;
+        }
+    }
+}
+.me-1{
+    margin-right: 2rem;
+}
+.content{
+    flex-basis: 80%;
+    min-height: 80vh;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__form{
+        display: flex;
+        flex-basis: 85%;
+        flex-wrap: wrap;
+        background-image: linear-gradient(to right, rgba($color-pink-dark,1) , rgba($color-pink-light,.65));
+        border-radius: 20px;
+        padding: 5rem;
+        align-items: flex-start;
+        margin-top: 5rem;
+        max-width: 80rem;
+    }
+   
+    &__input-name,
+    &__options{
+        font-size: 2.2rem;
+        margin: 3rem 0;
+        border-radius: 10px;
+        padding: 1rem;
+        flex-basis: 65%;
+
+        &:not(:first-of-type) {
+            margin: 0;
+        }
+    }
+
+    &__input{
+        display: flex;
+        flex-wrap: nowrap;
+        color: $color-white;
+        align-items: center;
+        flex-basis: 100%;
+        justify-content: space-between;
+        
+
+        &-date{
+            font-size: 2.2rem;
+            display: flex;
+            margin-right: 3rem;
+            align-items: center;
+
+            &:not(:first-of-type) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__link{
+        font-size: 5rem;
+        color: white;
+        margin-left: auto;
+    }
+
+    &__wrap{
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+
+        & a {
+            margin-left: 55%;
+        }
+    }
+
+    &__options{
+        width: 65%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    &__addusers{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+
+        &:not(:first-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &--label{
+            flex-basis: 100%;
+            color: $color-white;
+            font-size: $font-size-nav-bar;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+        &--wrap{
+            display: flex;
+            color: $color-white;
+            font-size: $font-size-nav-bar;
+            align-items: center;
+            font-weight: bold;
+
+            
+            &-input{
+             
+                padding: 1rem;
+                flex-basis: 65%;
+            }
+        }
+
+    }
+    
+}
+
+
+.input-date{
+    margin: 0 1rem;
+    border-radius: 5px;
+    padding: .5rem;
+    align-self: center;
+    flex-basis: 100%;
+    font-size: 2.2rem;
+}
+
+.icon-date{
+    font-size: 3rem;
+}
+
+.ml-1.5{
+    margin-left: 1.5rem;;
+}
+.btn-submit{
+    padding: 1rem 2rem;
+    background-color: $color-yellow;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 auto;
+    color: white;
+    margin-top: 4rem;
+    font-size: $font-size-bar-top;
+}
