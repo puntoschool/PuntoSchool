@@ -1,4 +1,4 @@
-.container{
+.dashboard .container{
     background-image: url(../img/Recurso_17.png);
     display: flex;
     flex-basis: 100%;
@@ -102,12 +102,17 @@
    
     &__input-name,
     &__options{
-        font-size: 2.2rem;
         margin: 3rem 0;
-        border-radius: 10px;
+        border-radius: 0;
         padding: 1rem;
         flex-basis: 65%;
-
+        border: 2px solid white;
+        background: rgba(255,255,255,0.1);
+        font-size: 16px;
+        color: white;
+        &::placeholder {
+            color: white;
+        }
         &:not(:first-of-type) {
             margin: 0;
         }
@@ -193,18 +198,24 @@
 
 .input-date{
     margin: 0 1rem;
-    border-radius: 5px;
+    border-radius: 0;
     padding: .5rem;
     align-self: center;
     flex-basis: 100%;
-    font-size: 2.2rem;
-}
+    border: 2px solid white;
+        background: rgba(255,255,255,0.1);
+        font-size: 16px;
+        color: white;
+        &::placeholder {
+            color: white;
+        }
+    }
 
 .icon-date{
     font-size: 3rem;
 }
 
-.ml-1.5{
+.ml-1-5{
     margin-left: 1.5rem;;
 }
 .btn-submit{
