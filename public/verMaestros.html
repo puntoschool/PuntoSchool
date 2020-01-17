@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PuntoSchool</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/datatables.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/datatables.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body class="admin">
@@ -20,13 +21,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-2 col-sm-3">
-                    <img src="img/logo-punto-school.png" alt="logo Punto School" class="img-fluid">
+                    <img src="assets/img/logo-punto-school.png" alt="logo Punto School" class="img-fluid">
                 </div>
                 <div class="col-md-10 col-sm-9">
                     <ul class="dash-nav">
                         <li class="">
                             <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
-                            <img src="img/Recurso 9.png" alt="" class="img-fluid">
+                            <img src="assets/img/user-default.png" alt="" class="img-fluid">
                         </li>
                         <li><i class="fas fa-sign-out-alt"></i></li>
                     </ul>
@@ -48,7 +49,7 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="nivelesEscolares.html">
                                         <i class="fas fa-graduation-cap fa-fw"></i>
                                         <span>Niveles Escolares</span>
                                     </a>
@@ -70,45 +71,38 @@
                     </nav>
                 </aside>
                 <main class="dash-main col-md-10 col-sm-9">
-                    <div class="dash-title">
-                        <div class="row justify-content-end">
-                            <div class="col-sm-10 col-9">
-                                <h1 class="title">Ver ciclos escolares</h1>
-                            </div>
-                            <div class="col-sm-2 col-3 btn-create">
-                                <a href="#">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <p>Agregar un nuevo ciclo escolar</p>
-                                </a>
-                            </div>
-                        </div>
+                    <h1 class="dash-title">Maestros titulares</h1>
+                    <div class="btn-create">
+                        <a href="#">
+                            <i class="fas fa-plus-circle"></i> Agregar un nuevo maestro titular
+                        </a>
                     </div>
                     <section class="tables sn-txt">
                         <table id="example" class="display" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Nombre del ciclo</th>
-                                    <th>Desde</th>
-                                    <th>Hasta</th>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Contraseña</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>2019-B</td>
-                                    <td>20/Ago/2019</td>
-                                    <td>18/Dic/2019</td>
+                                    <td>Elena Enríquez</td>
+                                    <td>elena@school.com</td>
                                     <td>
-                                        <a href="#" class="btn btn-pink-gradient"><i class="fas fa-indent"></i> Ver Detalle</a>
-                                        <a href="#" class="btn btn-blue"><i class="fas fa-trash-alt"></i> Eliminar</a>
+                                        <div class="input-group">
+                                            <input type="password" value="Constraseña" class="form-control">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>2020-A</td>
-                                    <td>08/Ene/2020</td>
-                                    <td>06/Jun/2020</td>
                                     <td>
-                                        <a href="#" class="btn btn-pink-gradient"><i class="fas fa-indent"></i> Ver Detalle</a>
+                                        <a href="#" class="btn btn-pink-gradient"><i class="fas fa-edit"></i> Editar</a>
                                         <a href="#" class="btn btn-blue"><i class="fas fa-trash-alt"></i> Eliminar</a>
                                     </td>
                                 </tr>
@@ -126,14 +120,14 @@
             <div class="row">
                 <div class="col-10">
                     <ul class="footer-info">
-                        <li><a href="#"><img src="img/icon-fb.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="img/icon-twitter.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="img/icon-mail.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="assets/img/icon-fb.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="assets/img/icon-twitter.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="assets/img/icon-mail.png" alt="Facebook"></a></li>
                         <li><a href="mailto:contacto@puntoschool.com">contacto@puntoschool.com</a></li>
                     </ul>
                 </div>
                 <div class="col-2 footer-faq">
-                    <a href="#"><img src="img/icon-faq.png" alt="faq icon"><span>Preguntas Frecuentes</span></a>
+                    <a href="#"><img src="assets/img/icon-faq.png" alt="faq icon"><span>Preguntas Frecuentes</span></a>
                 </div>
             </div>
         </div>
@@ -145,10 +139,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="assets/vendor/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/datatables.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/datatables.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#example').DataTable();
