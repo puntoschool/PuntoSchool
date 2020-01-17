@@ -2,12 +2,19 @@
     background: url(../img/bg-login.png) no-repeat center top;
     background-size: 100%;
     min-height: 650px;
+    @media screen and (max-width: $break-small) {
+        background-size: cover;
+    }
 }
 
 .login-form {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+    @media screen and (max-width: $break-small) {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
     input {
         background-color: transparent;
         border: 1px solid $color-white;
@@ -32,6 +39,9 @@
     color: $color-white;
     float: right;
     margin-top: 30px;
+    @media screen and (max-width: $break-small) {
+        margin-top: 0;
+    }
     i {
         font-size: 50px;
     }

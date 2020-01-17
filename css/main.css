@@ -67,11 +67,27 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: 27px;
+    text-align: center;
+  }
+}
 
 .subtitle {
   font-size: 60px;
   color: #ffffff;
   font-weight: 400;
+}
+@media screen and (max-width: 420px) {
+  .subtitle {
+    font-size: 27px;
+    text-align: center;
+  }
+}
+
+.btn {
+  font-size: 1.4rem;
 }
 
 .btn-amarillo {
@@ -80,7 +96,95 @@ body {
   color: #ffffff;
   background-color: #fcbf00;
   padding: 5px 40px;
+  transition: all 0.5s;
   border: none;
+}
+.btn-amarillo:hover {
+  color: #ffffff;
+  padding: 5px 42px;
+}
+
+.btn-blue {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2d2e83;
+  padding: 5px 40px;
+  transition: all 0.5s;
+  border: none;
+}
+.btn-blue:hover {
+  color: #ffffff;
+  padding: 5px 42px;
+}
+
+.btn-pink-gradient {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #e93e8c, rgba(237, 109, 107, 0.65));
+  padding: 5px 40px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.btn-pink-gradient:hover {
+  color: #ffffff;
+  padding: 5px 42px;
+}
+
+.footer .footer-info {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+@media screen and (max-width: 420px) {
+  .footer .footer-info {
+    flex-wrap: wrap;
+  }
+}
+.footer .footer-info li a {
+  color: #9d9d9c;
+  padding: 5px;
+}
+.footer .footer-info li a i {
+  font-size: 20px;
+}
+.footer .footer-info img {
+  width: 40px;
+  height: auto;
+}
+@media screen and (max-width: 420px) {
+  .footer .footer-info img {
+    width: 32px;
+  }
+}
+.footer .footer-faq a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-faq a span {
+  color: #9d9d9c;
+  font-weight: 600;
+  line-height: 1;
+}
+@media screen and (max-width: 420px) {
+  .footer .footer-faq a span {
+    display: none;
+  }
+}
+.footer .footer-faq a img {
+  margin-right: 5px;
+  width: 40px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: #9d9d9c !important;
+  border: 1px solid #9d9d9c;
+  background-color: white;
+  background: white;
 }
 
 .dashboard .container {
@@ -100,16 +204,19 @@ body {
 }
 .bar-top__dispaly-name {
   height: auto;
-  color: #575756;
-  font-size: 1.8rem;
+  color: color-grey-mid;
+  font-size: 4rem;
+  font-weight: 700;
   flex-basis: 100%;
+  width: 100%;
   padding: 1rem 2rem;
+  text-transform: uppercase;
 }
 .bar-top__main {
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 0 2rem;
 }
 .bar-top__logo {
@@ -123,11 +230,11 @@ body {
   margin-right: 1.5rem;
 }
 .bar-top__users-info--name {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #575756;
 }
 .bar-top__users-info--type {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #b2b2b2;
   text-align: right;
 }
@@ -145,8 +252,9 @@ body {
 }
 .nav-bar__item {
   display: flex;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 2rem;
+  line-height: 1;
 }
 .nav-bar__item--icon {
   margin-right: 1rem;
@@ -182,7 +290,7 @@ body {
   padding: 1rem;
   flex-basis: 65%;
   border: 2px solid white;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   font-size: 16px;
   color: white;
 }
@@ -261,7 +369,7 @@ body {
   align-self: center;
   flex-basis: 100%;
   border: 2px solid white;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   font-size: 16px;
   color: white;
 }
@@ -285,7 +393,127 @@ body {
   margin: 0 auto;
   color: white;
   margin-top: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.tables {
+  margin: 2rem;
+  color: #575756;
+}
+
+/* dashboard */
+.admin {
+  background: url(../../img/bg-admin.png) no-repeat;
+  background-size: cover;
+}
+.admin .dashboard {
+  margin-bottom: 1rem;
+}
+
+/* dashboard header */
+.dash-header {
+  border-bottom: 2px solid #c6c6c6;
+  padding: 5px 0;
+}
+
+.dash-nav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+  margin-bottom: 0;
+}
+.dash-nav li {
+  display: flex;
+  align-items: center;
+}
+.dash-nav li img {
+  margin-left: 10px;
+}
+.dash-nav li h5 {
+  color: #575756;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+.dash-nav li h5 span {
+  color: #9d9d9c;
+  font-weight: 400;
+}
+.dash-nav li i {
+  font-size: 30px;
+  margin-left: 10px;
+  color: #c6c6c6;
+}
+
+/* dashboard menu */
+.dash-menu {
+  background: rgba(198, 198, 198, 0.5);
+  color: #575756;
+  padding: 30px 10px 50px;
+  min-height: calc(100vh - 50px);
+}
+.dash-menu .navbar-expand-lg .navbar-nav {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.dash-menu .navbar-expand-lg .navbar-nav li {
+  margin-bottom: 10px;
+}
+.dash-menu .navbar-expand-lg .navbar-nav li a {
+  color: #575756;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.dash-menu .navbar-expand-lg .navbar-nav li a i {
+  width: 41px;
+}
+
+/* dashboard main */
+.dash-main {
+  padding: 2rem;
+}
+.dash-main .dash-title {
+  background-image: linear-gradient(to right, rgba(233, 62, 140, 0.8), rgba(237, 109, 107, 0.5));
+  padding: 4rem;
+  text-align: center;
+  border-radius: 20px;
+}
+.dash-main .dash-title .btn-create {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.dash-main .dash-title .btn-create:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.dash-main .dash-title .btn-create a {
+  color: #ffffff;
+  text-align: center;
+}
+.dash-main .dash-title .btn-create a:hover {
+  text-decoration: none;
+}
+.dash-main .dash-title .btn-create a i {
+  font-size: 2.8rem;
+}
+.dash-main .dash-title .btn-create a p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.dash-main .tables.sn-txt .dataTables_length label {
+  display: none;
+}
+.dash-main .tables.sn-txt input {
+  border: 1px solid lightgrey;
+  background: white;
 }
 
 .login {
@@ -293,11 +521,22 @@ body {
   background-size: 100%;
   min-height: 650px;
 }
+@media screen and (max-width: 420px) {
+  .login {
+    background-size: cover;
+  }
+}
 
 .login-form {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 420px) {
+  .login-form {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }
 .login-form input {
   background-color: transparent;
@@ -322,6 +561,11 @@ body {
   color: #ffffff;
   float: right;
   margin-top: 30px;
+}
+@media screen and (max-width: 420px) {
+  .create-account {
+    margin-top: 0;
+  }
 }
 .create-account i {
   font-size: 50px;

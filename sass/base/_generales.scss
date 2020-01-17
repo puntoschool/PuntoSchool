@@ -11,12 +11,24 @@ body {
     color: $color-white;
     font-weight: 700;
     text-transform: uppercase;
+    @media screen and (max-width: $break-small) {
+        font-size: 27px;
+        text-align: center;
+    }
 }
 
 .subtitle {
     font-size: 60px;
     color: $color-white;
     font-weight: 400;
+    @media screen and (max-width: $break-small) {
+        font-size: 27px;
+        text-align: center;
+    }
+}
+
+.btn {
+    font-size: 1.4rem;
 }
 
 .btn-amarillo {
@@ -25,5 +37,93 @@ body {
     color: $color-white;
     background-color: $color-yellow;
     padding: 5px 40px;
+    transition: all .5s;
     border: none;
+    &:hover {
+        color: $color-white;
+        padding: 5px 42px;
+    }
+}
+
+.btn-blue {
+    text-align: center;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $color-blue-dark;
+    padding: 5px 40px;
+    transition: all .5s;
+    border: none;
+    &:hover {
+        color: $color-white;
+        padding: 5px 42px;
+    }
+}
+
+
+.btn-pink-gradient {
+    text-align: center;
+    font-weight: 700;
+    color: $color-white;
+    background-image: linear-gradient(to right, rgba($color-pink-dark,1) , rgba($color-pink-light,.65));
+    padding: 5px 40px;
+    border: none;
+    text-decoration: none;
+    transition: all .5s;
+    &:hover {
+        color: $color-white;
+        padding: 5px 42px;
+    }
+}
+
+.footer {
+    .footer-info {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        align-items: center;
+        @media screen and (max-width: $break-small) {
+            flex-wrap: wrap;
+        }
+        li a {
+            color: $color-grey-mid;
+            padding: 5px;
+            i {
+                font-size: 20px;
+            }
+        }
+        img {
+            width: 40px;
+            height: auto;
+            @media screen and (max-width: $break-small) {
+                width: 32px;
+            }
+        }
+    }
+    .footer-faq {
+        a {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            span {
+                color: $color-grey-mid;
+                font-weight: 600;
+                line-height: 1;
+                @media screen and (max-width: $break-small) {
+                    display: none;
+                }
+            }
+            img {
+                margin-right: 5px;
+                width: 40px;
+            }
+        }
+        
+    }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #9d9d9c !important;
+    border: 1px solid #9d9d9c;
+    background-color: white;
+    background: white;
 }
