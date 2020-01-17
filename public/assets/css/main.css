@@ -150,7 +150,10 @@ body {
   top: 0;
   z-index: 100;
   background: #ffffff url(../img/bg-admin.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 80px; }
+  .dash-header .logo {
+    max-height: 69px; }
 
 .dash-nav {
   display: flex;
@@ -160,9 +163,8 @@ body {
   margin-bottom: 0; }
   .dash-nav li {
     display: flex;
-    align-items: center; }
-    .dash-nav li img {
-      margin-left: 10px; }
+    align-items: center;
+    margin-left: 1rem; }
     .dash-nav li h5 {
       color: #575756;
       font-weight: 600;
@@ -173,7 +175,7 @@ body {
         font-weight: 400; }
     .dash-nav li i {
       font-size: 30px;
-      margin-left: 10px;
+      margin-left: .5rem;
       color: #c6c6c6; }
 
 /* dashboard menu */
@@ -182,26 +184,50 @@ body {
   color: #575756;
   padding: 30px 10px 50px;
   min-height: calc(100vh - 127px); }
-  .dash-menu .navbar-expand-lg .navbar-nav {
+  @media screen and (max-width: 420px) {
+    .dash-menu {
+      padding: 0;
+      min-height: auto; } }
+  .dash-menu .navbar {
+    padding: 0; }
+    .dash-menu .navbar .navbar-collapse {
+      padding: 1rem; }
+  .dash-menu .navbar-toggler {
+    position: absolute;
+    top: -70px;
+    background: #ffffff;
+    right: 10px;
+    z-index: 100;
+    border: 2px solid #ed6d6b;
+    color: #ed6d6b;
+    padding: 1.2rem;
+    font-size: 2.3rem; }
+    .dash-menu .navbar-toggler:focus {
+      outline: none;
+      border: 2px solid #e93e8c;
+      color: #e93e8c; }
+  .dash-menu .navbar-expand-sm .navbar-nav {
     -ms-flex-direction: column;
     flex-direction: column; }
-    .dash-menu .navbar-expand-lg .navbar-nav li {
+    .dash-menu .navbar-expand-sm .navbar-nav li {
       margin-bottom: 10px; }
-      .dash-menu .navbar-expand-lg .navbar-nav li a {
+      .dash-menu .navbar-expand-sm .navbar-nav li a {
         color: #575756;
-        font-size: 18px;
+        font-size: 1.8rem;
         text-transform: uppercase;
         line-height: 1.1;
         font-weight: 700;
         display: flex;
         align-items: center; }
-        .dash-menu .navbar-expand-lg .navbar-nav li a i {
+        .dash-menu .navbar-expand-sm .navbar-nav li a:hover {
+          color: #ed6d6b; }
+        .dash-menu .navbar-expand-sm .navbar-nav li a i {
           margin-right: 1rem; }
 
 /* dashboard main */
 .dash-main {
   padding: 2rem;
-  max-height: calc(100vh - 130px);
+  min-height: calc(100vh - 130px);
   overflow-y: scroll; }
   .dash-main .dash-title {
     font-size: 3.5rem;
