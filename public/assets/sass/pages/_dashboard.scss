@@ -25,6 +25,10 @@
     z-index: 100;
     background: #ffffff url(../img/bg-admin.png) no-repeat;
     background-size: cover;
+    height: 80px;
+    .logo {
+        max-height: 69px;
+    }
 }
 
 .dash-nav {
@@ -36,9 +40,7 @@
     li {
         display: flex;
         align-items: center;
-        img {
-            margin-left: 10px;
-        }
+        margin-left: 1rem;
         h5 {
             color: $color-grey-dark;
             font-weight: 600;
@@ -51,7 +53,7 @@
         }
         i {
             font-size: 30px;
-            margin-left: 10px;
+            margin-left: .5rem;
             color: $color-grey-light;
         }
     }
@@ -64,19 +66,48 @@
     color: $color-grey-dark;
     padding: 30px 10px 50px;
     min-height: calc(100vh - 127px);
-    .navbar-expand-lg .navbar-nav {
+    @media screen and (max-width: $break-small) {
+        padding: 0;
+        min-height: auto;
+    }
+    .navbar {
+        padding: 0;
+        .navbar-collapse {
+            padding: 1rem;
+        }
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: -70px;
+        background: $color-white;
+        right: 10px;
+        z-index: 100;
+        border: 2px solid $color-pink-light;
+        color: $color-pink-light;
+        padding: 1.2rem;
+        font-size: 2.3rem;
+        &:focus {
+            outline: none;
+            border: 2px solid $color-pink-dark;
+            color: $color-pink-dark;
+            }
+        }
+    .navbar-expand-sm .navbar-nav {
         -ms-flex-direction: column;
         flex-direction: column;
         li {
             margin-bottom: 10px;
             a {
                 color: $color-grey-dark;
-                font-size: 18px;
+                font-size: 1.8rem;
                 text-transform: uppercase;
                 line-height: 1.1;
                 font-weight: 700;
                 display: flex;
                 align-items: center;
+                &:hover {
+                    color: $color-pink-light;
+                }
                 i {
                     margin-right: 1rem;
                 }
@@ -89,7 +120,7 @@
 
 .dash-main {
     padding: 2rem;
-    max-height: calc(100vh - 130px);
+    min-height: calc(100vh - 130px);
     overflow-y: scroll;
     .dash-title {
         font-size: 3.5rem;
