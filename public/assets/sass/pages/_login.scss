@@ -1,9 +1,13 @@
+/* Ligin Styles*/
 .login {
-    background: url(../img/bg-login.png) no-repeat center top;
-    background-size: 100%;
-    min-height: 650px;
-    @media screen and (max-width: $break-small) {
-        background-size: cover;
+    height: 100vh;
+    background-image: url(../img/bg-login.png);
+    background-size: cover;
+    background-position: top;
+    z-index: 10;
+    
+    @media screen and (max-width: $break-xsm) {
+        height: auto;
     }
 }
 
@@ -39,9 +43,9 @@
     color: $color-white;
     float: right;
     margin-top: 30px;
-    @media screen and (max-width: $break-small) {
-        margin-top: 0;
-    }
+    // @media screen and (max-width: $break-small) {
+    //     margin-top: 0;
+    // }
     i {
         font-size: 50px;
     }
@@ -49,5 +53,76 @@
         font-size: 13px;
         text-transform: uppercase;
         font-weight: 700;
+    }
+}
+
+.title {
+    font-size: 60px;
+    color: $color-white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $break-large) {
+        font-size: 55px;
+    }
+
+    @media screen and (max-width: $break-md) {
+        font-size: 45px;
+    }
+
+    @media screen and (max-width: $break-sm) {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+        font-size: 38px;
+        text-align: center;
+    }
+}
+
+.subtitle {
+    font-size: 60px;
+    color: $color-white;
+    font-weight: 400;
+
+    @media screen and (max-width: $break-large) {
+        font-size: 55px;
+    }
+
+    @media screen and (max-width: $break-md) {
+        font-size: 45px;
+    }
+
+    @media screen and (max-width: $break-sm) {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+        font-size: 38px;
+        text-align: center;
+    }
+}
+
+.mt-1vh{
+    margin-top: 1vh;
+}
+
+.mt-3vh{
+    margin-top: 3vh;
+}
+
+.mt-10vh{
+    margin-top: 10vh;
+}
+
+.fixed{
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+
+    @media screen and (max-width: $break-xsm) {
+        position: relative
     }
 }

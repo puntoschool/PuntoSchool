@@ -1,0 +1,14 @@
+{
+  "name": "puntoschool",
+  "version": "1.0.0",
+  "description": "livestreaming",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass public/assets/sass/main.scss public/assets/css/main.css -w"
+  },
+  "author": "punto school team",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
