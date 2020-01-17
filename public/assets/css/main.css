@@ -308,11 +308,26 @@ body {
   background: white;
 }
 
-.login {
-  background: url(../img/bg-login.png) no-repeat center top;
-  background-size: 100%;
-  min-height: 650px;
+.fixed{
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
 }
+
+.login {
+
+  height: 100vh;
+  background-image: url(../img/bg-login.png);
+  background-size: cover;
+  background-position: top;
+ }
+
+
+  /* background: url(../img/bg-login.png) no-repeat center top;
+  background-size: 100%;
+  min-height: 650px; */
+  
+
 @media screen and (max-width: 420px) {
   .login {
     background-size: cover;

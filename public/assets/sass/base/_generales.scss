@@ -4,27 +4,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: $color-grey-mid;
-}
-
-.title {
-    font-size: 60px;
-    color: $color-white;
-    font-weight: 700;
-    text-transform: uppercase;
-    @media screen and (max-width: $break-small) {
-        font-size: 27px;
-        text-align: center;
-    }
-}
-
-.subtitle {
-    font-size: 60px;
-    color: $color-white;
-    font-weight: 400;
-    @media screen and (max-width: $break-small) {
-        font-size: 27px;
-        text-align: center;
-    }
+    box-sizing: border-box;
 }
 
 .btn {
@@ -126,4 +106,10 @@ body {
     border: 1px solid #9d9d9c;
     background-color: white;
     background: white;
+}
+
+.fixed{
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
 }
