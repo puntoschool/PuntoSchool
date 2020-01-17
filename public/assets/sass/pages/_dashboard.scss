@@ -1,0 +1,157 @@
+.tables {
+    margin: 2rem;
+    color: $color-grey-dark;
+}
+
+/* dashboard */
+
+.admin {
+    background: url(../img/bg-admin.png) no-repeat;
+    background-size: cover;
+    .dashboard {
+        margin-bottom: 1rem;
+        margin-top: 80px;
+    }
+}
+
+/* dashboard header */
+
+.dash-header {
+    border-bottom: 2px solid #c6c6c6;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: #ffffff url(../img/bg-admin.png) no-repeat;
+    background-size: cover;
+    height: 80px;
+    .logo {
+        max-height: 69px;
+    }
+}
+
+.dash-nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    margin-bottom: 0;
+    li {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        h5 {
+            color: $color-grey-dark;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 0;
+            span {
+                color: $color-grey-mid;
+                font-weight: 400;
+            }
+        }
+        i {
+            font-size: 30px;
+            margin-left: .5rem;
+            color: $color-grey-light;
+        }
+    }
+}
+
+/* dashboard menu */
+
+.dash-menu {
+    background: rgba($color: #c6c6c6, $alpha: 0.5);
+    color: $color-grey-dark;
+    padding: 30px 10px 50px;
+    min-height: calc(100vh - 127px);
+    @media screen and (max-width: $break-small) {
+        padding: 0;
+        min-height: auto;
+    }
+    .navbar {
+        padding: 0;
+        .navbar-collapse {
+            padding: 1rem;
+        }
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: -70px;
+        background: $color-white;
+        right: 10px;
+        z-index: 100;
+        border: 2px solid $color-pink-light;
+        color: $color-pink-light;
+        padding: 1.2rem;
+        font-size: 2.3rem;
+        &:focus {
+            outline: none;
+            border: 2px solid $color-pink-dark;
+            color: $color-pink-dark;
+            }
+        }
+    .navbar-expand-sm .navbar-nav {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        li {
+            margin-bottom: 10px;
+            a {
+                color: $color-grey-dark;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                line-height: 1.1;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: $color-pink-light;
+                }
+                i {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* dashboard main */
+
+.dash-main {
+    padding: 2rem;
+    min-height: calc(100vh - 130px);
+    overflow-y: scroll;
+    .dash-title {
+        font-size: 3.5rem;
+        color: #575756;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .btn-create {
+        margin-top: 4rem;
+        a {
+            color: $color-grey-dark;
+            font-size: 1.9rem;
+            font-weight: 600;
+            i {
+                font-size: 3.3rem;
+                color: $color-pink-dark;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $color-blue-dark;
+            }
+        }
+    }
+    .tables.sn-txt  {
+        .dataTables_length label {
+            display: none;
+        }
+        input {
+            border: 1px solid lightgrey;
+            background: white;
+        }
+    }
+}
