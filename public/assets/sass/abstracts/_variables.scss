@@ -19,6 +19,7 @@ $color-pink-dark: #e93e8c; //bg-main-content
 $color-pink-light: #ed6d6b; //bg-main-content
 
 // TYPOGRAPHY
+<<<<<<< HEAD:public/assets/sass/abstracts/_variables.scss
 $font-size-nav-bar: 2.2rem;
 $font-size-bar-top: 1.6rem;
 $font-size-small-bar-top: 1.4rem;
@@ -27,5 +28,18 @@ $default-font-family:'Open Sans', sans-serif;
 
 $break-small: 420px;
 $break-md: 750px;
+=======
+$font-size-nav-bar: 1.8rem;
+$font-size-bar-top: 1.6rem;
+$font-size-small-bar-top: 1.4rem;
+$font-size-icon-bar-top: 3.2rem;
+$default-font-family:'Open Sans', sans-serif;
+
+// BREAKPOINTS
+
+>>>>>>> 44419e29b3844d0dd390bb6f887e36b8b6a38680:public/sass/abstracts/_variables.scss
+
+$bp-xxl: 100em; 
+$bp-xl: 90.62em; 
 
 
