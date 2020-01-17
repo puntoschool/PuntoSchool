@@ -1,0 +1,86 @@
+.login {
+    background: url(../img/bg-login-1.png) no-repeat center top;
+    background-size: cover;
+    min-height: 675px;
+    height: 100vh;
+}
+
+.logo{
+    margin-left: 4.2rem;
+    margin-top: 3.8rem;
+}
+
+.title,
+.subtitle {
+    font-size: 6rem;
+    color: $color-white;
+    font-weight: 800;
+    text-transform: uppercase; 
+    line-height: 6.33rem; 
+}
+
+.title {
+    margin-top: 20%;
+}
+.subtitle {
+    font-weight: 300;
+}
+
+.btn-amarillo {
+    text-align: center;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $color-yellow;
+    padding: .5rem 4rem;
+    border: none;
+    margin-top: 5rem;
+}
+
+.login-form {
+    text-align: center;
+    margin-top: 13rem;
+    margin-bottom: 5rem;
+
+    // @media only screen and (min-width: $bp-xxl) {
+    //     margin-top: 12rem;
+    // }
+
+    // @media only screen and (min-width: $bp-xl) and (max-width: $bp-xxl -1px) {
+    //     margin-top: 15rem;
+    // }
+
+    input {
+        background-color: transparent;
+        border: 1px solid $color-white;
+        color: $color-white;
+        width: 100%;
+        padding: .8rem 1rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+        &:focus {
+            outline: 0;
+        }
+        &::placeholder {
+            color: $color-white;
+
+        }
+    }
+}
+
+.create-account {
+    text-align: center;
+    color: $color-white;
+    float: right;
+    margin-top: 10rem;
+    cursor: pointer;
+    i {
+        font-size: 5rem;
+    }
+    h5 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
