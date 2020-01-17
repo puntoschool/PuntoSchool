@@ -19,7 +19,7 @@
 
 <body class="admin">
     <header class="dash-header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-2 col-sm-3">
                     <img src="assets/img/logo-punto-school.png" alt="logo Punto School" class="img-fluid">
@@ -72,18 +72,11 @@
                     </nav>
                 </aside>
                 <main class="dash-main col-md-10 col-sm-9">
-                    <div class="dash-title">
-                        <div class="row justify-content-end">
-                            <div class="col-sm-10 col-9">
-                                <h1 class="title">Ver ciclos escolares</h1>
-                            </div>
-                            <div class="col-sm-2 col-3 btn-create">
-                                <a href="#">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <p>Agregar un nuevo ciclo escolar</p>
-                                </a>
-                            </div>
-                        </div>
+                    <h1 class="dash-title">Ver ciclos escolares</h1>
+                    <div class="btn-create">
+                        <a href="#">
+                            <i class="fas fa-plus-circle"></i> Agregar un nuevo ciclo escolar
+                        </a>
                     </div>
                     <section class="tables sn-txt">
                         <table id="example" class="display" style="width:100%">
@@ -92,6 +85,7 @@
                                     <th>Nombre del ciclo</th>
                                     <th>Desde</th>
                                     <th>Hasta</th>
+                                    <th>Nivel Educativo</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -100,18 +94,10 @@
                                     <td>2019-B</td>
                                     <td>20/Ago/2019</td>
                                     <td>18/Dic/2019</td>
+
                                     <td>
-                                        <a href="#" class="btn btn-pink-gradient"><i class="fas fa-indent"></i> Ver Detalle</a>
-                                        <a href="#" class="btn btn-blue"><i class="fas fa-trash-alt"></i> Eliminar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2020-A</td>
-                                    <td>08/Ene/2020</td>
-                                    <td>06/Jun/2020</td>
-                                    <td>
-                                        <a href="#" class="btn btn-pink-gradient"><i class="fas fa-indent"></i> Ver Detalle</a>
-                                        <a href="#" class="btn btn-blue"><i class="fas fa-trash-alt"></i> Eliminar</a>
+                                        <a href="#" class="btn btn-amarillo"><i class="fas fa-user-graduate"></i> Alumnos</a>
+                                        <a href="#" class="btn btn-blue"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -124,7 +110,7 @@
     </section>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-10">
                     <ul class="footer-info">

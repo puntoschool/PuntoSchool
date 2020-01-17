@@ -41,7 +41,7 @@ body {
     border: none;
     &:hover {
         color: $color-white;
-        padding: 5px 42px;
+        background-color: $color-grey-light;
     }
 }
 
@@ -50,12 +50,12 @@ body {
     font-weight: 700;
     color: $color-white;
     background-color: $color-blue-dark;
-    padding: 5px 40px;
+    padding: 5px 20px;
     transition: all .5s;
     border: none;
     &:hover {
-        color: $color-white;
-        padding: 5px 42px;
+    background-color: $color-blue-light;
+    color: $color-white;
     }
 }
 
@@ -65,13 +65,13 @@ body {
     font-weight: 700;
     color: $color-white;
     background-image: linear-gradient(to right, rgba($color-pink-dark,1) , rgba($color-pink-light,.65));
-    padding: 5px 40px;
+    padding: 5px 20px;
     border: none;
     text-decoration: none;
     transition: all .5s;
     &:hover {
-        color: $color-white;
-        padding: 5px 42px;
+    background-image: linear-gradient(to right, rgba($color-pink-light,.65) , rgba($color-pink-dark,1));
+    color: $color-white;
     }
 }
 

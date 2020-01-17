@@ -101,7 +101,7 @@ body {
 }
 .btn-amarillo:hover {
   color: #ffffff;
-  padding: 5px 42px;
+  background-color: #c6c6c6;
 }
 
 .btn-blue {
@@ -109,13 +109,13 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-color: #2d2e83;
-  padding: 5px 40px;
+  padding: 5px 20px;
   transition: all 0.5s;
   border: none;
 }
 .btn-blue:hover {
+  background-color: #1d71b8;
   color: #ffffff;
-  padding: 5px 42px;
 }
 
 .btn-pink-gradient {
@@ -123,14 +123,14 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-image: linear-gradient(to right, #e93e8c, rgba(237, 109, 107, 0.65));
-  padding: 5px 40px;
+  padding: 5px 20px;
   border: none;
   text-decoration: none;
   transition: all 0.5s;
 }
 .btn-pink-gradient:hover {
+  background-image: linear-gradient(to right, rgba(237, 109, 107, 0.65), #e93e8c);
   color: #ffffff;
-  padding: 5px 42px;
 }
 
 .footer .footer-info {
@@ -199,12 +199,19 @@ body {
 }
 .admin .dashboard {
   margin-bottom: 1rem;
+  margin-top: 80px;
 }
 
 /* dashboard header */
 .dash-header {
   border-bottom: 2px solid #c6c6c6;
   padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background: #ffffff url(../img/bg-admin.png) no-repeat;
+  background-size: cover;
 }
 
 .dash-nav {
@@ -267,6 +274,8 @@ body {
 /* dashboard main */
 .dash-main {
   padding: 2rem;
+  max-height: calc(100vh - 130px);
+  overflow-y: scroll;
 }
 .dash-main .dash-title {
   font-size: 3.5rem;

@@ -10,14 +10,21 @@
     background-size: cover;
     .dashboard {
         margin-bottom: 1rem;
+        margin-top: 80px;
     }
 }
 
 /* dashboard header */
 
 .dash-header {
-    border-bottom: 2px solid $color-grey-light;
+    border-bottom: 2px solid #c6c6c6;
     padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: #ffffff url(../img/bg-admin.png) no-repeat;
+    background-size: cover;
 }
 
 .dash-nav {
@@ -82,6 +89,8 @@
 
 .dash-main {
     padding: 2rem;
+    max-height: calc(100vh - 130px);
+    overflow-y: scroll;
     .dash-title {
         font-size: 3.5rem;
         color: #575756;
