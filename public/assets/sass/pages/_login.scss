@@ -1,12 +1,15 @@
+/* Ligin Styles*/
 .login {
     height: 100vh;
     background-image: url(../img/bg-login.png);
     background-size: cover;
     background-position: top;
+
     
     @media screen and (max-width: $break-small) {
         background-size: cover;
     }
+
 }
 
 .login-form {
@@ -16,6 +19,7 @@
     @media screen and (max-width: $break-small) {
         margin-top: 50px;
         margin-bottom: 20px;
+
     }
     input {
         background-color: transparent;
