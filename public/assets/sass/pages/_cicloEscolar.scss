@@ -1,0 +1,241 @@
+.content-center{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    flex-basis: 80%;
+    min-height: 80vh;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__form,
+    &__form1,
+    &__form2{
+        display: flex;
+        flex-basis: 85%;
+        flex-wrap: wrap;
+        background-image: linear-gradient(to right, rgba($color-pink-dark,1) , rgba($color-pink-light,.65));
+        border-radius: 20px;
+        padding: 5rem;
+        align-items: flex-start;
+        margin-top: 5rem;
+        max-width: 80rem;
+
+        @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+            padding: 1rem;
+        }
+
+    }
+
+    &__form1{
+        flex-basis: 50%;
+        padding: 4rem;
+        max-width: 800px;
+
+        @media screen and (max-width: $break-md) {
+            padding: 3rem;
+            flex-basis: 65%;
+        }
+
+        @media screen and (max-width: $break-sm) {
+            flex-basis: 80%;
+        }
+
+        @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__form2{
+        max-width: 800px;
+
+        @media screen and (max-width: $break-md) {
+            padding: 2rem;
+        }
+
+        @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__input-name{
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+        border-radius: 10px;
+        padding: .5rem;
+        flex-basis: 80%;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: $break-xsm) and (max-width: $break-small) {
+            flex-basis: 100%;
+        }
+
+        &:not(:first-of-type) {
+            margin: 0;
+        }
+    }
+
+    &__options{
+        font-size: 1.8rem;
+        margin: 3rem 0;
+        border-radius: 10px;
+        padding: .5rem;
+        flex-basis: 70%;
+
+        @media screen and (max-width: $break-md) {
+            flex-basis: 100%;
+        }
+
+        &:not(:first-of-type) {
+            margin: 0;
+        }
+    }
+
+    &__input{
+        display: flex;
+        flex-wrap: nowrap;
+        color: $color-white;
+        align-items: center;
+        flex-basis: 100%;
+        justify-content: space-between;
+
+        @media screen and (max-width: $break-md) {
+            display: inline-block;
+        }
+
+
+        &-date{
+            font-size: 2.2rem;
+            display: flex;
+            margin-right: 3rem;
+            align-items: center;
+
+            @media screen and (max-width: $break-md) {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            &:not(:first-of-type) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__link{
+        font-size: 5rem;
+        color: white;
+        margin-left: auto;
+    }
+
+    &__wrap{
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+
+        & a {
+            margin-left: 66%;
+        }
+    }
+
+    &__options{
+        width: 80%;
+        margin: 0;
+
+        @media screen and (max-width: $break-large) {
+            width: 100%;
+        }
+        
+    }
+
+    &__addusers{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+        flex-basis: 90%;
+
+        @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+            flex-basis: 100%;
+        }
+
+        &:not(:first-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &--label{
+            flex-basis: 100%;
+            color: $color-white;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+        &--wrap{
+            display: flex;
+            color: $color-white;
+            font-size: 1.8rem;
+            align-items: center;
+            font-weight: bold;
+
+
+            &-input{
+
+                padding: 1rem;
+                flex-basis: 65%;
+            }
+        }
+
+    }
+
+}
+
+
+.input-date{
+    margin: 0 1rem;
+    border-radius: 5px;
+    padding: .5rem;
+    align-self: center;
+    flex-basis: 100%;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: $break-md) {
+        margin:0;
+        margin-right: 1rem;
+    }
+}
+
+.icon-date{
+    font-size: 3rem;
+}
+
+.btn-submit{
+    padding: 1rem 2rem;
+    background-color: #fcbf00;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    margin-top: 0rem;
+    margin-left: auto;
+    font-size: 1.8rem;
+} 
+
+.btn-hidden{
+
+    @media screen and (min-width: $break-xsm) and (max-width: 575px) {
+        overflow: hidden;
+        width: 150px;
+    }
+}
+
+.w90{
+
+    @media screen and (max-width: $break-md) {
+        width: 90px;
+    }
+}
+
+.ml-15{
+    margin-left: 1.5rem;
+}
+.mr1{
+    margin-right: 1rem;
+}
