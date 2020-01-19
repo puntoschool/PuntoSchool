@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .btn {
     font-size: 1.4rem;
 }
@@ -45,10 +49,11 @@ body {
     font-weight: 700;
     color: $color-white;
     background-image: linear-gradient(to right, rgba($color-pink-dark,1) , rgba($color-pink-light,.65));
-    padding: 5px 20px;
+    padding: 1.3rem 2rem;
     border: none;
     text-decoration: none;
-    transition: all .5s;
+    transition: all 1s;
+    border-radius: 25px;
     &:hover {
     background-image: linear-gradient(to right, rgba($color-pink-light,.65) , rgba($color-pink-dark,1));
     color: $color-white;
