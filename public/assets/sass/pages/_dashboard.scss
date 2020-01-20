@@ -65,7 +65,7 @@
     background: rgba($color: #c6c6c6, $alpha: 0.5);
     color: $color-grey-dark;
     padding: 30px 10px 50px;
-    min-height: calc(100vh - 127px);
+    min-height: calc(100vh - 140px);
     @media screen and (max-width: $break-md) {
         padding: 0;
         min-height: auto;
@@ -120,7 +120,7 @@
 
 .dash-main {
     padding: 2rem;
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 140px);
     overflow-y: scroll;
     .dash-title {
         font-size: 3.5rem;
