@@ -5,6 +5,11 @@ body {
     font-size: 16px;
     color: $color-grey-mid;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .btn {
@@ -55,6 +60,41 @@ body {
     color: $color-white;
     }
 }
+
+.btn-next-con {
+    text-align: right;
+    padding-top: 30px;
+     color: #ED6B6D;
+  
+  }
+  
+  .btn-next,
+  .btn-back,
+  .btn-last {
+    display: inline-block;
+    -webkit-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+    line-height: 45px;
+    padding: 0 60px;
+    -webkit-border-radius: 22.5px;
+    -moz-border-radius: 22.5px;
+    border-radius: 22.5px;
+    background: none;
+    font-size: 16px;
+    color: #ED6B6D;
+    font-family: inherit;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .btn-back:hover,
+  .btn-next:hover,
+  .btn-back:hover,
+  .btn-last:hover {
+    background-image: linear-gradient(to right, #ED6B6D, #E93E8C);
+    color: #FFF;
+  }
 
 .footer {
     .footer-info {
