@@ -227,6 +227,9 @@
         box-shadow: none;
         }
     }
+    .btn-next, .btn-back, .btn-last {
+        border: 2px solid $color-pink-light;
+    }
 }
 
 .dash-accordion {

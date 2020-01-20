@@ -652,6 +652,9 @@ a:hover {
   border: 2px solid #e93e8c;
   box-shadow: none;
 }
+.dash-form .btn-next, .dash-form .btn-back, .dash-form .btn-last {
+  border: 2px solid #ed6d6b;
+}
 
 .dash-accordion .group-title {
   color: #575756;
