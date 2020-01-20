@@ -78,12 +78,26 @@
                     </nav>
                 </aside>
                 <main class="dash-main col-md-10 col-sm-9">
-                    <h1 class="dash-title">Maestros titulares</h1>
-                    <div class="btn-create">
-                        <a href="#">
-                            <i class="fas fa-plus-circle"></i> Agregar un nuevo maestro titular
-                        </a>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8"><h1 class="dash-title">Maestros titulares</h1></div>
+                        <div class="col-md-6 col-sm-4">
+                            <div class="btn-title">
+                                <div class="btn-create">
+                                    <a href="crearMaestros.html">
+                                        <h6>Crear nuevo</h6>
+                                        <i class="fas fa-plus-circle"></i> 
+                                    </a>
+                                </div>
+                                <div class="btn-guide">
+                                    <a href="#">
+                                        <i class="fas fa-book"></i>
+                                        <p>Guía de uso</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
                     <section class="tables sn-txt">
                         <table id="example" class="display" style="width:100%">
                             <thead>
@@ -100,17 +114,17 @@
                                     <td>elena@school.com</td>
                                     <td>
                                         <div class="input-group">
-                                            <input type="password" value="Constraseña" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                            <div class="input-group-prepend">
+                                                <button class="" type="button" id="button-addon2">
                                                     <i class="fas fa-eye"></i>
                                                 </button>
                                             </div>
+                                            <input type="password" value="Constraseña" class="form-control">
                                         </div>
                                     </td>
-                                    <td>
-                                        <a href="#" class="btn btn-pink-gradient"><i class="fas fa-edit"></i></a>
-                                        <a href="#" class="btn btn-blue"><i class="fas fa-trash-alt"></i></a>
+                                    <td class="btn-tables">
+                                        <a href="#" class=""><acronym title="Editar"><i class="fas fa-edit"></i></acronym></a>
+                                        <a href="#" class=""><acronym title="Eliminar"><i class="fas fa-trash-alt"></i></acronym></a>
                                     </td>
                                 </tr>
                             </tbody>

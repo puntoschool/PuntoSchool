@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .btn {
     font-size: 1.4rem;
 }
@@ -50,7 +54,7 @@ a{
     font-weight: 700;
     color: $color-white;
     background-image: linear-gradient(to right, rgba($color-pink-dark,1) , rgba($color-pink-light,.65));
-    padding: 5px 20px;
+    padding: 1.3rem 2rem;
     border: none;
     text-decoration: none;
     transition: all .5s;

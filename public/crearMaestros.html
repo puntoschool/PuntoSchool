@@ -79,15 +79,37 @@
                     </nav>
                 </aside>
                 <main class="dash-main col-md-10 col-sm-9">
-                    <div class="dash-title">
-                        <div class="row justify-content-end">
-                            <div class="col-sm-12">
-                                <h1 class="title">Crear nuevo maestro titular</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8">
+                            <h1 class="dash-title">Crear nuevo Maestro titular</h1>
+                        </div>
+                        <div class="col-md-6 col-sm-4">
+                            <div class="btn-title">
+                                <div class="btn-guide">
+                                    <a href="#">
+                                        <i class="fas fa-book"></i>
+                                        <p>Guía de uso</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <section class="dash-form">
-                        <form action=""></form>
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 col-sm-8">
+                                <form action="" class="dash-form">
+                                    <input type="text" class="form-control" id="nombreMaestro"
+                                        placeholder="Nombre Completo">
+                                    <input type="text" class="form-control" id="telefonoMaestro"
+                                        placeholder="Número de teléfono">
+                                    <input type="email" class="form-control" id="correoMaestro"
+                                        placeholder="Correo Electrónico">
+                                    <input type="password" class="form-control" id="contrasenaMaestro"
+                                        placeholder="Contraseña">
+                                    <button class="btn btn-pink-gradient">Crear Maestro</button>
+                                </form>
+                            </div>
+                        </div>
                     </section>
 
                 </main>
@@ -123,5 +145,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>
