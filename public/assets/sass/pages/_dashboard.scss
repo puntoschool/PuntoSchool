@@ -128,6 +128,7 @@
         line-height: 1.2;
         font-weight: 400;
         text-transform: uppercase;
+        text-align: left;
     }
     .btn-title {
         display: flex;
@@ -210,14 +211,21 @@
     }
 }
 
-.dash-form .form-control {
-    border-radius: 25px;
-    font-size: 1.5rem;
-    border: 2px solid $color-grey-mid;
-    padding: 1.9rem 1.2rem;
-    &:focus {
-    border: 2px solid $color-pink-dark;
-    box-shadow: none;
+.dash-form {
+    margin-top: 3rem;
+    .input--style-1 {
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .form-control {
+        border-radius: 25px;
+        font-size: 1.5rem;
+        border: 2px solid $color-grey-mid;
+        padding: 1.9rem 1.2rem;
+        &:focus {
+        border: 2px solid $color-pink-dark;
+        box-shadow: none;
+        }
     }
 }
 

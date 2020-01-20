@@ -555,6 +555,7 @@ a:hover {
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
 }
 .dash-main .btn-title {
   display: flex;
@@ -634,6 +635,13 @@ a:hover {
   margin-right: 1.5rem;
 }
 
+.dash-form {
+  margin-top: 3rem;
+}
+.dash-form .input--style-1 {
+  font-size: 15px;
+  max-width: 100%;
+}
 .dash-form .form-control {
   border-radius: 25px;
   font-size: 1.5rem;
