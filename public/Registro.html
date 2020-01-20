@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PuntoSchool</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/datatables.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body class="admin">
+    <div class="page-wrapper bg-img-1 p-t-275 p-b-100">
+        <div class="wrapper wrapper--w690">
+            <div class="card card-1">
+                <div class="card-heading">
+                    <h2 class="title">Form Wizard</h2>
+                </div>
+                <div class="card-body">
+                    <form class="wizard-container" method="POST" action="#" id="js-wizard-form">
+                        <div class="progress" id="js-progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                <span class="progress-val">40%</span>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tab">
+                            <li class="active">
+                                <a href="#tab1" data-toggle="tab">1</a>
+                            </li>
+                            <li>
+                                <a href="#tab2" data-toggle="tab">1</a>
+                            </li>
+                            <li>
+                                <a href="#tab3" data-toggle="tab">1</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div class="input-group">
+                                    <label class="label">Full name*:</label>
+                                    <input class="input--style-1" type="text" name="fullname" placeholder="ex: Taylor Fuller">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Email*:</label>
+                                    <input class="input--style-1" type="email" name="email" placeholder="ex: example@email.com">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Phone number*:</label>
+                                    <input class="input--style-1" type="text" name="phone" placeholder="">
+                                </div>
+                                <div class="btn-next-con">
+                                    <a class="btn-next" href="#">Next</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <div class="input-group">
+                                    <label class="label">Building Number:</label>
+                                    <input class="input--style-1" type="text" name="buil-num" placeholder="02">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Street:</label>
+                                    <input class="input--style-1" type="text" name="street" placeholder="ex: Philadelphia Avenue">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">A Town:</label>
+                                    <input class="input--style-1" type="text" name="town" placeholder="The Town">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Zip code:</label>
+                                    <input class="input--style-1" type="text" name="code">
+                                </div>
+                                <div class="btn-next-con">
+                                    <a class="btn-back" href="#">back</a>
+                                    <a class="btn-next" href="#">Next</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <div class="input-group">
+                                    <label class="label">Card Holder Name:</label>
+                                    <input class="input--style-1" type="text" name="cardName" value="Matthew Wood">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Card Number:</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-1" type="text" name="cardNum" value="4224-3228-6160-5079">
+                                        <i class="zmdi zmdi-card input-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">CVC:</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-1" type="text" name="town" placeholder="The Town">
+                                        <i class="zmdi zmdi-card input-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Expiration(MM/YYYY):</label>
+                                    <input class="input--style-1" type="text" name="exp" placeholder="MM/YYYY">
+                                </div>
+                                <div class="btn-next-con">
+                                    <a class="btn-back" href="#">back</a>
+                                    <a class="btn-last" href="#">Submit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEPPER-->
+        <!-- Jquery JS-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- Vendor JS-->
+        <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+        <script src="vendor/bootstrap-wizard/bootstrap.min.js"></script>
+        <script src="vendor/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <!-- STEPPER-->
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="assets/vendor/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/vendor/js/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+
+</html>
