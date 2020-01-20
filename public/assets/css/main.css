@@ -169,11 +169,20 @@ a:hover {
 }
 
 .modals .modal-content {
+  padding: 1rem;
   border: 0;
-  border-radius: 1.4rem;
+  border-radius: 2.4rem;
 }
 .modals .modal-header {
   border-bottom: 0;
+  padding: 1.5rem;
+  text-align: center;
+  display: block;
+}
+.modals .modal-header h2 {
+  color: #575756;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 .modals .modal-footer {
   justify-content: center;
@@ -186,6 +195,7 @@ a:hover {
   border: 0;
   color: #575756;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .content-center {
@@ -681,6 +691,18 @@ a:hover {
 }
 .dash-accordion .group a:hover {
   color: #575756;
+}
+
+.alumnos-list {
+  padding: 0 2rem;
+  list-style-type: none;
+}
+.alumnos-list li {
+  margin-bottom: 1.2rem;
+}
+.alumnos-list li a {
+  float: right;
+  color: #9d9d9c;
 }
 
 /*.border-input {

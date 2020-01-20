@@ -278,6 +278,18 @@
     }
 }
 
+.alumnos-list {
+    padding: 0 2rem;
+    list-style-type: none;
+    li {
+        margin-bottom: 1.2rem;
+        a {
+            float: right;
+            color: $color-grey-mid;
+        }
+    }
+}
+
 /*.border-input {
     display: flex;
     align-items: center;
