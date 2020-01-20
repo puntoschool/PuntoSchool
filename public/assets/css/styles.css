@@ -744,7 +744,7 @@ text-align: left;
 
 }
 
-li {
+.li_progress {
 display:flex;
 justify-content: space-between;
 flex-direction: column;
