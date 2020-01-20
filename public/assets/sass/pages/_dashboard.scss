@@ -65,7 +65,7 @@
     background: rgba($color: #c6c6c6, $alpha: 0.5);
     color: $color-grey-dark;
     padding: 30px 10px 50px;
-    min-height: calc(100vh - 127px);
+    min-height: calc(100vh - 140px);
     @media screen and (max-width: $break-md) {
         padding: 0;
         min-height: auto;
@@ -120,7 +120,7 @@
 
 .dash-main {
     padding: 2rem;
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 140px);
     overflow-y: scroll;
     .dash-title {
         font-size: 3.5rem;
@@ -227,6 +227,54 @@
         font-weight: 700;
         background-color: transparent;
         border: 0;
+        font-size: 1.6rem;
+        outline: none;
+        &:before {
+            content:"\f0dd";
+            font-family: "Font Awesome 5 Free";
+            padding-right: 5px;
+        }
+    }
+    .group-title.collapsed {
+        &:before {
+            content:"\f0de";
+        }
+    }
+    .accordion>.card {
+        border: 0;
+        background: transparent;
+        .card-header {
+            border-radius: 0;
+            margin-bottom: -1px;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid $color-grey-light;
+        }
+    }
+    .group {
+        h4 {
+            font-size: 1.6rem;
+            color: $color-grey-dark;
+            margin-bottom: 0;
+            a {
+                &:hover {
+                    color: $color-pink-dark;
+                }
+            }
+
+        }
+        p {
+            color: $color-grey-mid;
+            font-size: 1.5rem;
+        }
+        a {
+            color: $color-grey-mid;
+            font-size: 1.3rem;
+            margin-left: 5px;
+            &:hover {
+                color: $color-grey-dark;
+            }
+        }
     }
 }
 

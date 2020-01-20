@@ -61,6 +61,7 @@ a:hover {
 }
 
 .footer {
+    height: 60px;
     .footer-info {
         display: flex;
         list-style-type: none;
@@ -111,5 +112,27 @@ a:hover {
     border: 1px solid #9d9d9c;
     background-color: white;
     background: white;
+}
+
+.modals {
+    .modal-content {
+        border: 0;
+        border-radius: 1.4rem;
+    }
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-footer {
+        justify-content: center;
+        border-top: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        .btn-modal {
+            background-color: transparent;
+            border: 0;
+            color: $color-grey-dark;
+            font-size: 2rem;
+        }
+    }
 }
 
