@@ -764,43 +764,6 @@ width: 120px;
 height: auto;
 }
 
-.page-footer {
-background-color: #E7ECF1;
-}
-
-footer {
-position: relative;
-bottom: 0;
-width: 100%;
-position: fixed;
-height: 70px;
-background-color: #f3eded;
-z-index: 6;
-}
-
-.footerleft {
-color: #9d9d9c;
-}
-
-footer ul.footerleft{
-  margin-left: 5px;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  padding-left: 0px;
-
-}
-footer ul.footerleft li{
-  display: inline;
-  margin-right: 10px;
-}
-footer a{
-  color: #222;
-}
-
-footer a:hover{
-  color: #ffffff;
-  text-decoration: none;    
-}
 .social:hover {
    -webkit-transform: scale(1.0);
    -webkit-transition-duration: 0.5s;
