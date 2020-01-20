@@ -466,6 +466,8 @@ button {
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  border-radius: 25px;
+  border-width: 2px;
 }
 
 .input--style-1::-webkit-input-placeholder {
