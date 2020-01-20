@@ -458,7 +458,7 @@ a:hover {
   padding: 30px 10px 50px;
   min-height: calc(100vh - 127px);
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .dash-menu {
     padding: 0;
     min-height: auto;
@@ -603,71 +603,73 @@ a:hover {
 .dash-form .form-control {
   border-radius: 25px;
   font-size: 1.5rem;
-  border: 0;
+  border: 2px solid #9d9d9c;
   padding: 1.9rem 1.2rem;
 }
 .dash-form .form-control:focus {
+  border: 2px solid #e93e8c;
   box-shadow: none;
 }
 
-.border-input {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-  max-width: 100%;
-  position: relative;
-  padding: 0;
-  box-sizing: border-box;
-  color: #FFF;
-  background: #fff;
-  background-clip: padding-box;
-  border: solid 2px transparent;
-  border-radius: 2.4rem;
-  margin-bottom: 1.3rem;
-}
-.border-input:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: #9d9d9c;
-}
-.border-input:hover, .border-input:focus {
-  outline: none;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-  max-width: 100%;
-  position: relative;
-  padding: 0;
-  box-sizing: border-box;
-  color: #FFF;
-  background: #fff;
-  background-clip: padding-box;
-  border: solid 2px transparent;
-  border-radius: 2.4rem;
-  margin-bottom: 1.3rem;
-}
-.border-input:hover:before, .border-input:focus:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(to right, #e93e8c, #ed6d6b);
+.dash-accordion .group-title {
+  color: #575756;
+  font-weight: 700;
+  background-color: transparent;
+  border: 0;
 }
 
+/*.border-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    background: #fff;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 2.4rem;
+    margin-bottom: 1.3rem;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -2px; 
+      border-radius: inherit; 
+      background: $color-grey-mid;
+    }
+    &:hover, &:focus {
+        outline: none;
+        display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    background: #fff;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 2.4rem;
+    margin-bottom: 1.3rem;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -2px;
+      border-radius: inherit; 
+      background: linear-gradient(to right, $color-pink-dark, $color-pink-light);
+    }
+    }
+}
+*/
 /* Ligin Styles*/
 .login {
   height: 100vh;
