@@ -113,3 +113,25 @@ a:hover {
     background: white;
 }
 
+.modals {
+    .modal-content {
+        border: 0;
+        border-radius: 1.4rem;
+    }
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-footer {
+        justify-content: center;
+        border-top: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        .btn-modal {
+            background-color: transparent;
+            border: 0;
+            color: $color-grey-dark;
+            font-size: 2rem;
+        }
+    }
+}
+
