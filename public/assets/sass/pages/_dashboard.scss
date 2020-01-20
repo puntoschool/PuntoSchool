@@ -66,7 +66,7 @@
     color: $color-grey-dark;
     padding: 30px 10px 50px;
     min-height: calc(100vh - 127px);
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: $break-md) {
         padding: 0;
         min-height: auto;
     }
@@ -213,14 +213,24 @@
 .dash-form .form-control {
     border-radius: 25px;
     font-size: 1.5rem;
-    border: 0;
+    border: 2px solid $color-grey-mid;
     padding: 1.9rem 1.2rem;
     &:focus {
-        box-shadow: none;
+    border: 2px solid $color-pink-dark;
+    box-shadow: none;
     }
 }
 
-.border-input {
+.dash-accordion {
+    .group-title {
+        color: $color-grey-dark;
+        font-weight: 700;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+/*.border-input {
     display: flex;
     align-items: center;
     width: 100%;
@@ -271,5 +281,5 @@
     }
     }
 }
-
+*/
 
