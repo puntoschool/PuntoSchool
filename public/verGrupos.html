@@ -54,6 +54,7 @@
                                     <i class="fas fa-user mr-1"></i>
                                     <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                                 </li>
+                                <li><i class="fas fa-home"></i></li>
                                 <li><i class="fas fa-sign-out-alt"></i></li>
                             </ul>
                             <ul class="navbar-nav">
@@ -125,7 +126,7 @@
                                                     </p> 
                                                 </div>
                                                 <div class="group">
-                                                    <h4>1-B <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>1-B <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Hugo Reyes
                                                         <span class="float-right">
@@ -135,7 +136,7 @@
                                                     </p>
                                                 </div>
                                                 <div class="group">
-                                                    <h4>2-A <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>2-A <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Alejandro
                                                         <span class="float-right">
@@ -161,7 +162,7 @@
                                             data-parent="#accordionGroups">
                                             <div class="card-body">
                                                 <div class="group">
-                                                    <h4>1-A <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>1-A <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Elena Enríquez 
                                                         <span class="float-right">
@@ -171,7 +172,7 @@
                                                     </p> 
                                                 </div>
                                                 <div class="group">
-                                                    <h4>2-A <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>2-A <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Hugo Reyes
                                                         <span class="float-right">
@@ -181,7 +182,7 @@
                                                     </p>
                                                 </div>
                                                 <div class="group">
-                                                    <h4>3-A <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>3-A <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Alejandro
                                                         <span class="float-right">
@@ -207,7 +208,7 @@
                                             data-parent="#accordionGroups">
                                             <div class="card-body">
                                                 <div class="group">
-                                                    <h4>1-A <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>1-A <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Elena Enríquez 
                                                         <span class="float-right">
@@ -217,7 +218,7 @@
                                                     </p> 
                                                 </div>
                                                 <div class="group">
-                                                    <h4>1-B <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>1-B <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Hugo Reyes
                                                         <span class="float-right">
@@ -227,7 +228,7 @@
                                                     </p>
                                                 </div>
                                                 <div class="group">
-                                                    <h4>2-A <a href="#"><i class="fas fa-user-graduate"></i> Ver
+                                                    <h4>2-A <a href="#modalAlumnos" data-toggle="modal" data-target="#modalAlumnos"><i class="fas fa-user-graduate"></i> Ver
                                                         alumnos</a></h4> 
                                                     <p>Mtro: Alejandro
                                                         <span class="float-right">
@@ -271,19 +272,17 @@
 <div class="modal fade modals" id="modalAlumnos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-title">
+        <div class="modal-header">
             <h2>Alumnos 1-A</h2>
-            <h4>MAestro: Elena Enríquez</h4>
+            <h4>Maestro: Elena Enríquez</h4>
         </div>
         <div class="modal-body">
-          <div class="alumnos-list">
-              <ul>
-                  <li>Juanito Lópex Pérez <a href=""><i class="fas fa-trash-alt"></i></a></li>
-                  <li>Pedrito Martínez <a href=""><i class="fas fa-trash-alt"></i></a></li>
-                  <li>Ana González Guitierrez <a href=""><i class="fas fa-trash-alt"></i></a></li>
-                  <li>Karla Ramírez Palafox <a href=""><i class="fas fa-trash-alt"></i></a></li>
-              </ul>
-          </div>
+            <ul class="alumnos-list">
+                <li>Juanito Lópex Pérez <a href=""><i class="fas fa-trash-alt"></i></a></li>
+                <li>Pedrito Martínez <a href=""><i class="fas fa-trash-alt"></i></a></li>
+                <li>Ana González Guitierrez <a href=""><i class="fas fa-trash-alt"></i></a></li>
+                <li>Karla Ramírez Palafox <a href=""><i class="fas fa-trash-alt"></i></a></li>
+            </ul>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn-modal" data-dismiss="modal">Cerrar</button>
