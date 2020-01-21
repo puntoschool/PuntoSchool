@@ -57,6 +57,11 @@ body {
   font-size: 16px;
   color: #9d9d9c;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:hover {
@@ -103,7 +108,7 @@ a:hover {
   padding: 1.3rem 2rem;
   border: none;
   text-decoration: none;
-  transition: all 1s;
+  transition: all 0.5s;
   border-radius: 25px;
 }
 .btn-pink-gradient:hover {
@@ -193,6 +198,13 @@ a:hover {
   justify-content: center;
 }
 
+.content-start {
+  display: flex;
+  justify-content: start; }
+  @media screen and (min-width: 1400px) {
+    .content-start {
+      justify-content: center; } }
+
 .content {
   flex-basis: 80%;
   min-height: 80vh;
@@ -205,7 +217,6 @@ a:hover {
   display: flex;
   flex-basis: 85%;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right, #e93e8c, rgba(237, 109, 107, 0.65));
   border-radius: 20px;
   padding: 5rem;
   align-items: flex-start;
@@ -214,65 +225,119 @@ a:hover {
 }
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .content__form, .content__form1, .content__form2 {
-    padding: 1rem;
-  }
-}
-.content__form1 {
-  flex-basis: 50%;
-  padding: 4rem;
-  max-width: 800px;
-}
-@media screen and (max-width: 768px) {
+    display: flex;
+    flex-basis: 85%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 5rem;
+    align-items: flex-start;
+    margin-top: 5rem;
+    max-width: 80rem; }
+    @media screen and (max-width: 767px) {
+      .content__form, .content__form1, .content__form2 {
+        flex-basis: 100%;
+        padding: 3rem; } }
+    @media screen and (min-width: 320px) and (max-width: 575px) {
+      .content__form, .content__form1, .content__form2 {
+        padding: 1rem;
+        flex-basis: 100%; } }
   .content__form1 {
-    padding: 3rem;
-    flex-basis: 65%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .content__form1 {
-    flex-basis: 80%;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 575px) {
-  .content__form1 {
-    flex-basis: 100%;
-  }
-}
-.content__form2 {
-  max-width: 800px;
-}
-@media screen and (max-width: 768px) {
+    flex-basis: 60%;
+    padding: 0rem 4rem 0;
+    margin-top: 0;
+    max-width: 800px; }
+    @media screen and (max-width: 767px) {
+      .content__form1 {
+        padding: 3rem;
+        flex-basis: 65%; } }
+    @media screen and (max-width: 576px) {
+      .content__form1 {
+        flex-basis: 80%; } }
+    @media screen and (max-width: 420px) {
+      .content__form1 {
+        flex-basis: 80%; } }
+    @media screen and (min-width: 320px) and (max-width: 419px) {
+      .content__form1 {
+        flex-basis: 100%; } }
   .content__form2 {
-    padding: 2rem;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 575px) {
-  .content__form2 {
-    flex-basis: 100%;
-  }
-}
-.content__input-name {
-  font-size: 1.8rem;
-  margin: 1.5rem 0;
-  border-radius: 10px;
-  padding: 0.5rem;
-  flex-basis: 80%;
-  margin-bottom: 2rem;
-}
-@media screen and (min-width: 320px) and (max-width: 420px) {
+    max-width: 800px;
+    padding: 0 5rem;
+    margin-top: 0; }
+    @media screen and (max-width: 767px) {
+      .content__form2 {
+        padding: 2rem; } }
+    @media screen and (min-width: 320px) and (max-width: 575px) {
+      .content__form2 {
+        flex-basis: 100%; } }
   .content__input-name {
-    flex-basis: 100%;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    border-radius: 25px;
+    padding: 1rem;
+    flex-basis: 80%;
+    height: 5.4rem;
+    margin-bottom: 4rem;
+    border: 1px solid #c6c6c6; }
+    .content__input-name:focus, .content__input-name:hover {
+      border: 1px solid #ED6B6D; }
+    @media screen and (max-width: 767px) {
+      .content__input-name {
+        flex-basis: 80%; } }
+    @media screen and (min-width: 320px) and (max-width: 420px) {
+      .content__input-name {
+        flex-basis: 100%; } }
+    .content__input-name:not(:first-of-type) {
+      margin: 0; }
+  .content__options {
+    font-size: 1.8rem;
+    border-radius: 25px;
+    border: 1px solid #c6c6c6;
+    width: 80%;
+    margin: 0;
+    height: 5.4rem;
+    padding: 1rem; }
+    @media screen and (max-width: 992px) {
+      .content__options {
+        width: 100%; } }
+    .content__options:focus, .content__options:hover {
+      border: 1px solid #ED6B6D; }
+    @media screen and (max-width: 767px) {
+      .content__options {
+        flex-basis: 100%; } }
+    .content__options:not(:first-of-type) {
+      margin: 0; }
+  .content__input {
+    display: flex;
+    flex-wrap: nowrap;
+    color: #ffffff;
+    align-items: center;
+    flex-basis: 50%;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .content__input {
+        display: inline-block; } }
+    .content__input-date {
+      font-size: 2.2rem;
+      margin-right: 3rem;
+      align-items: center;
+      color: #575756; }
+      @media screen and (max-width: 420px) {
+        .content__input-date {
+          margin-right: 0;
+          margin-bottom: 2rem;
+          width: 100%; } }
+      .content__input-date:not(:first-of-type) {
+        margin-right: 0; }
+  .content__link {
+    font-size: 5rem;
+    color: white;
+    margin-left: auto; }
+  .content__wrap {
+    width: 100%;
   }
 }
-.content__input-name:not(:first-of-type) {
-  margin: 0;
-}
-.content__options {
-  font-size: 1.8rem;
-  margin: 3rem 0;
-  border-radius: 10px;
-  padding: 0.5rem;
-  flex-basis: 70%;
+.content__options:focus, .content__options:hover {
+  border: 1px solid #ED6B6D;
 }
 @media screen and (max-width: 768px) {
   .content__options {
@@ -287,7 +352,7 @@ a:hover {
   flex-wrap: nowrap;
   color: #ffffff;
   align-items: center;
-  flex-basis: 100%;
+  flex-basis: 50%;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
@@ -297,9 +362,9 @@ a:hover {
 }
 .content__input-date {
   font-size: 2.2rem;
-  display: flex;
   margin-right: 3rem;
   align-items: center;
+  color: #575756;
 }
 @media screen and (max-width: 768px) {
   .content__input-date {
@@ -323,15 +388,6 @@ a:hover {
 .content__wrap a {
   margin-left: 66%;
 }
-.content__options {
-  width: 80%;
-  margin: 0;
-}
-@media screen and (max-width: 992px) {
-  .content__options {
-    width: 100%;
-  }
-}
 .content__addusers {
   display: flex;
   flex-wrap: wrap;
@@ -340,59 +396,87 @@ a:hover {
 }
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .content__addusers {
-    flex-basis: 100%;
-  }
-}
-.content__addusers:not(:first-of-type) {
-  margin-bottom: 2rem;
-}
-.content__addusers--label {
-  flex-basis: 100%;
-  color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-.content__addusers--wrap {
-  display: flex;
-  color: #ffffff;
-  font-size: 1.8rem;
-  align-items: center;
-  font-weight: bold;
-}
-.content__addusers--wrap-input {
-  padding: 1rem;
-  flex-basis: 65%;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    flex-basis: 90%; }
+    @media screen and (min-width: 320px) and (max-width: 575px) {
+      .content__addusers {
+        flex-basis: 100%; } }
+    .content__addusers:not(:first-of-type) {
+      margin-bottom: 2rem; }
+    .content__addusers--label {
+      flex-basis: 100%;
+      color: #575756;
+      font-size: 3.2rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      text-transform: uppercase; }
+    .content__addusers--wrap {
+      display: flex;
+      color: #000;
+      font-size: 1.8rem;
+      align-items: center;
+      font-weight: bold; }
+
+.icon-plus {
+  color: #E93E8C; }
 
 .input-date {
-  margin: 0 1rem;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 0.5rem;
   align-self: center;
   flex-basis: 100%;
   font-size: 1.8rem;
+  border: 1px solid #c6c6c6;
+}
+.input-date:focus, .input-date:hover {
+  border: 1px solid #ED6B6D;
+}
+.input-date:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  width: 2rem;
+  display: block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 @media screen and (max-width: 768px) {
   .input-date {
     margin: 0;
     margin-right: 1rem;
-  }
-}
+    margin-left: 1rem; }
+  @media screen and (max-width: 767px) {
+    .input-date {
+      margin: 0;
+      margin-right: 1rem; } }
 
 .icon-date {
   font-size: 3rem;
 }
 
-.btn-submit {
-  padding: 1rem 2rem;
-  background-color: #fcbf00;
-  border: none;
-  border-radius: 1rem;
-  color: white;
-  margin-top: 0rem;
-  margin-left: auto;
+.btn__next {
+  display: inline-block;
+  -webkit-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+  line-height: 45px;
+  padding: 0 6rem;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: none;
   font-size: 1.8rem;
+  color: #ED6B6D;
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 1px solid #ED6B6D;
+}
+.btn__next:hover {
+  background-image: linear-gradient(to right, #ED6B6D, #E93E8C);
+  color: #FFF;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
@@ -402,7 +486,41 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+.btn__excel {
+  -webkit-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.15);
+  line-height: 45px;
+  padding: 1rem 6rem;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  font-size: 1.8rem;
+  color: #9d9d9c;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: capitalize;
+  flex-basis: 16rem;
+  background-color: transparent;
+  border: 1px solid #c6c6c6; }
+  .btn__excel::before {
+    content: '\f01b';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #9d9d9c; }
+  .btn__excel:hover {
+    border: 1px solid #ED6B6D;
+    text-decoration: none;
+    color: #9d9d9c; }
+
+.btn__form {
+  display: flex;
+  flex-basis: 72%;
+  justify-content: flex-end;
+  margin-top: 2rem; }
+
+@media screen and (max-width: 767px) {
   .w90 {
     width: 90px;
   }
@@ -414,6 +532,10 @@ a:hover {
 
 .mr1 {
   margin-right: 1rem;
+}
+
+.mt15vh {
+  margin-top: 15vh;
 }
 
 .tables {
@@ -763,6 +885,7 @@ a:hover {
 .login-form input {
   background-color: transparent;
   border: 1px solid #ffffff;
+  border-radius: 25px;
   color: #ffffff;
   width: 100%;
   padding: 8px 10px;
@@ -797,58 +920,40 @@ a:hover {
   font-size: 60px;
   color: #ffffff;
   font-weight: 700;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 992px) {
-  .title {
-    font-size: 55px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .title {
-    font-size: 45px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .title {
-    font-size: 40px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 575px) {
-  .title {
-    font-size: 38px;
-    text-align: center;
-  }
-}
+  text-transform: uppercase; }
+  @media screen and (max-width: 992px) {
+    .title {
+      font-size: 55px; } }
+  @media screen and (max-width: 767px) {
+    .title {
+      font-size: 45px; } }
+  @media screen and (max-width: 576px) {
+    .title {
+      font-size: 40px;
+      text-align: center; } }
+  @media screen and (min-width: 320px) and (max-width: 575px) {
+    .title {
+      font-size: 38px;
+      text-align: center; } }
 
 .subtitle {
   font-size: 60px;
   color: #ffffff;
-  font-weight: 400;
-}
-@media screen and (max-width: 992px) {
-  .subtitle {
-    font-size: 55px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .subtitle {
-    font-size: 45px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .subtitle {
-    font-size: 40px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 575px) {
-  .subtitle {
-    font-size: 38px;
-    text-align: center;
-  }
-}
+  font-weight: 400; }
+  @media screen and (max-width: 992px) {
+    .subtitle {
+      font-size: 55px; } }
+  @media screen and (max-width: 767px) {
+    .subtitle {
+      font-size: 45px; } }
+  @media screen and (max-width: 576px) {
+    .subtitle {
+      font-size: 40px;
+      text-align: center; } }
+  @media screen and (min-width: 320px) and (max-width: 575px) {
+    .subtitle {
+      font-size: 38px;
+      text-align: center; } }
 
 .mt-1vh {
   margin-top: 1vh;
@@ -873,4 +978,11 @@ a:hover {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+.contraseña {
+  margin-top: 1rem;
+}
+
+
+/* # sourceMappingURL=main.css.map       No se por qué sale en error esto pero tuve que agregar 2 llaves que se cerraran */
+
+}}
