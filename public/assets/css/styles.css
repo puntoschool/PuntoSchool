@@ -799,9 +799,8 @@ flex-direction: row;
 }
 
 .jumbotron {
-  background-image: linear-gradient(#E93E8C, #ED6B6D);
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #36A9E1;
   justify-content: center;
 }
 
@@ -875,4 +874,16 @@ margin-left: 37%;
 
 .form-check-input {
   size: 1rem;
+}
+
+.display-1 {
+  font-size: 18rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.lead {
+  color: #9D9D9C;
+  font-size: 3.25rem;
+  font-weight: 300;
 }
