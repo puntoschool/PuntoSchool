@@ -765,10 +765,13 @@ height: auto;
 }
 
 .social:hover {
+  transform: scale(1.0);
+  transition-duration: 0.5s;
    -webkit-transform: scale(1.0);
    -webkit-transition-duration: 0.5s;
 }
 .social {
+  transform: scale(0.8);
    -webkit-transform: scale(0.8);
    color: #222;
    
