@@ -850,7 +850,7 @@ margin-right: 10px;
 }
 
 #page_content {
-margin: 0 auto;
+margin: 0 0;
 justify-content: center;
 align-content: center;
 text-align: center;
@@ -858,7 +858,7 @@ text-align: center;
 
 #submit_button {
 width: 100px;
-margin-left: 35%;
+margin: auto;
 }
 
 .custom-control {
@@ -866,3 +866,10 @@ margin-left: 37%;
 }
 
 
+#form_container {
+  text-align: left;
+}
+
+.form-check-input {
+  size: 1rem;
+}
