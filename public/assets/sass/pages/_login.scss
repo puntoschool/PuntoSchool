@@ -129,6 +129,10 @@
     }
 }
 
-.contraseña{
-    margin-top: 1rem;
+.contraseña {
+     margin-top: 3rem;
+    & a{
+        color: $color-white;
+    }
 }
+
