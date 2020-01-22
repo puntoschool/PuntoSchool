@@ -328,7 +328,8 @@ a:active {
 .btn-next-con {
   text-align: right;
   padding-top: 30px;
-   color: #ED6B6D;
+  font-weight: 600;
+  color: #ED6B6D;
 
 }
 
@@ -350,6 +351,11 @@ a:active {
   font-family: inherit;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.btn-next-color {
+  background-image: linear-gradient(to right, #E93E8C, #ED6B6D) !important;
+  color: #FFF !important; 
 }
 
 .btn-back:hover,
@@ -459,9 +465,9 @@ button {
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #333;
-  font-weight: 700;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  max-width: 300px;
+  font-weight: 400;
+  font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
+  max-width: 100%;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -759,10 +765,10 @@ position: relative;
 z-index: 3;
 }
 
-#logo {
+/* #logo {
 width: 120px;
 height: auto;
-}
+} */
 
 .social:hover {
   transform: scale(1.0);
@@ -805,35 +811,23 @@ flex-direction: row;
 }
 
 .progress {
-  width: 250px;
-  border-radius: 1.25rem;
+  width: 100%;
+  border-radius: 1.5rem;
   margin: 0;
+  margin-top: 2rem;
 }
 
 div.progress {
-  border-radius: 1.25rem;
-  height: 45px;
+  border-radius: 1.5rem;
+  height: 25px;
   padding: 3px;
 }
 
 .progress .progress-bar {
-  background-color: #E93E8C;
+  background-color: #ED6B6D;
   height: 100%;
-  border-top-left-radius: 1.25rem;
-  border-bottom-left-radius: 1.25rem;
-}
-
-div.progress {
-border-radius: 1.25rem;
-height: 45px;
-padding: 3px;
-}
-
-.progress .progress-bar {
-background-color: #E93E8C;
-height: 100%;
-border-top-left-radius: 1.25rem;
-border-bottom-left-radius: 1.25rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 #user_name {

@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PuntoSchool</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Maestros | PuntoSchool</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
 
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/css/datatables.min.css" />
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/vendor/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/css/datatables.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body class="admin">
@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-2 col-sm-3 col-8">
-                    <img src="assets/img/logo-punto-school.png" alt="logo Punto School" class="img-fluid logo">
+                    <img src="../assets/img/logo-punto-school.png" alt="logo Punto School" class="img-fluid logo">
                 </div>
                 <div class="col-md-10 col-sm-9 col-4">
                     <ul class="dash-nav d-none d-sm-flex">
@@ -30,7 +30,8 @@
                             <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                             <i class="fas fa-user"></i>
                         </li>
-                        <li><i class="fas fa-sign-out-alt"></i></li>
+                        <li><a href="dashboardSchool.html"><i class="fas fa-home"></i></a> </li>
+                        <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -53,11 +54,12 @@
                                     <i class="fas fa-user mr-1"></i>
                                     <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                                 </li>
-                                <li><i class="fas fa-sign-out-alt"></i></li>
+                                <li><a href="dashboardSchool.html"><i class="fas fa-home"></i></a> </li>
+                        <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i></a></li>
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="levels.html">
                                         <i class="fas fa-graduation-cap fa-fw"></i>
                                         <span>Niveles Escolares</span>
                                     </a>
@@ -79,10 +81,16 @@
                     </nav>
                 </aside>
                 <main class="dash-main col-md-10 col-sm-9">
-
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-md-6 col-sm-8"><h1 class="dash-title">Maestros titulares</h1></div>
+                        <div class="col-md-6 col-sm-4">
                             <div class="btn-title">
+                                <div class="btn-create">
+                                    <a href="crearMaestros.html">
+                                        <h6>Crear nuevo</h6>
+                                        <i class="fas fa-plus-circle"></i> 
+                                    </a>
+                                </div>
                                 <div class="btn-guide">
                                     <a href="#">
                                         <i class="fas fa-book"></i>
@@ -92,35 +100,40 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <section class="tables sn-txt">
+                        <table id="example" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Contraseña</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Elena Enríquez</td>
+                                    <td>elena@school.com</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="" type="button" id="button-addon2">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                            </div>
+                                            <input type="password" value="Constraseña" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="btn-tables">
+                                        <a href="#" class=""><acronym title="Editar"><i class="fas fa-edit"></i></acronym></a>
+                                        <a href="#" class=""><acronym title="Eliminar"><i class="fas fa-trash-alt"></i></acronym></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
 
-                    <div class="content-center">
-
-                        <form action="#" class="content__form">
-                            
-                            <input type="text" class="content__input-name" placeholder="Nombre"> 
-
-                            <div class="content__input">
-                                <div class="content__input-date">
-                                    <label class= "w90"for="from" style="font-weight: bold;">Desde:</label>
-                                    <input type="date" id="from" class="input-date">
-                                </div>
-
-                                <div class="content__input-date">
-                                    <label class= "w90" for="to" style="font-weight: bold;">Hasta:</label>
-                                    <input type="date" id="to" class="input-date">
-                                </div>
-                            </div>
-                                
-                        </form>
-                    </div>
-
-                    <div class="row mt15vh justify-content-end">
-                        <div class="col-12">
-                            <div class="text-right">
-                                <a href="#" class="btn__next text-end">Siguiente</a>
-                            </div>
-                        </div>
-                    </div>
                 </main>
             </div>
         </div>
@@ -131,14 +144,14 @@
             <div class="row">
                 <div class="col-10">
                     <ul class="footer-info">
-                        <li><a href="#"><img src="assets/img/icon-fb.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="assets/img/icon-twitter.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="assets/img/icon-mail.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/icon-fb.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/icon-twitter.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/icon-mail.png" alt="Facebook"></a></li>
                         <li><a href="mailto:contacto@puntoschool.com">contacto@puntoschool.com</a></li>
                     </ul>
                 </div>
                 <div class="col-2 footer-faq">
-                    <a href="#"><img src="assets/img/icon-faq.png" alt="faq icon"><span>Preguntas Frecuentes</span></a>
+                    <a href="#"><img src="../assets/img/icon-faq.png" alt="faq icon"><span>Preguntas Frecuentes</span></a>
                 </div>
             </div>
         </div>
@@ -150,15 +163,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="assets/vendor/js/bootstrap.min.js"
+    <script src="../assets/vendor/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/vendor/js/datatables.min.js"></script>
-    <!-- <script>
+    <script type="text/javascript" src="../assets/vendor/js/datatables.min.js"></script>
+    <script>
         $(document).ready(function () {
             $('#example').DataTable();
         });
-    </script> -->
+    </script>
 </body>
 
 </html>

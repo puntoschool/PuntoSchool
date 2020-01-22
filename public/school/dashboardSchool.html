@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PuntoSchool</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Administración Escolar | PuntoSchool</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
 
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/css/datatables.min.css" />
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/vendor/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/css/datatables.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body class="admin">
@@ -23,7 +22,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-2 col-sm-3 col-8">
-                    <img src="assets/img/logo-punto-school.png" alt="logo Punto School" class="img-fluid logo">
+                    <img src="../assets/img/logo-punto-school.png" alt="logo Punto School" class="img-fluid logo">
                 </div>
                 <div class="col-md-10 col-sm-9 col-4">
                     <ul class="dash-nav d-none d-sm-flex">
@@ -31,14 +30,14 @@
                             <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                             <i class="fas fa-user"></i>
                         </li>
-                        <li><a href="/progress_bar.html"><i class="fas fa-home"></i></a> </li>
-                        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i></a></li>
+                        <li><a href="dashboardSchool.html"><i class="fas fa-home"></i></a> </li>
+                        <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </header>
 
+    </header>
     <section class="dashboard">
         <div class="container-fluid">
             <div class="row">
@@ -55,8 +54,8 @@
                                     <i class="fas fa-user mr-1"></i>
                                     <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                                 </li>
-                                <li><i class="fas fa-home"></i></li>
-                                <li><i class="fas fa-sign-out-alt"></i></li>
+                                <li><a href="dashboardSchool.html"><i class="fas fa-home"></i></a> </li>
+                                <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i></a></li>
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
@@ -81,46 +80,13 @@
                         </div>
                     </nav>
                 </aside>
-                <main class="dash-main col-md-10 col-sm-9">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-8">
-                            <h1 class="dash-title">Crear nuevo Maestro titular</h1>
-                        </div>
-                        <div class="col-md-6 col-sm-4">
-                            <div class="btn-title">
-                                <div class="btn-guide">
-                                    <a href="#">
-                                        <i class="fas fa-book"></i>
-                                        <p>Guía de uso</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Page content -->
+                <main class="col jumbotron jumbotron-fluid">
+                    <div class="container d-flex flex-column align-items-center">
+                        <h1 class="display-1">¡HOLA!</h1>
+                        <p class="lead">Bienvenido al administrador escolar</p>
                     </div>
-                    <section class="dash-form">
-                        <div class="row justify-content-center">
-                            <div class="col-md-5 col-sm-8">
-                                <form action="" class="dash-form">
-                                    <div class="input-group">
-                                        <input class="input--style-1" type="text" name="nombreMaestro" placeholder="Nombre Completo">
-                                    </div>
-                                    <div class="input-group">
-                                        <input class="input--style-1" type="text" name="telefonoMaestro" placeholder="Número de teléfono">
-                                    </div>
-                                    <div class="input-group">
-                                        <input class="input--style-1" type="email" name="correoMaestro" placeholder="Correo Electrónico">
-                                    </div>
-                                    <div class="input-group">
-                                        <input class="input--style-1" type="password" name="contrasenaMaestro" placeholder="Contraseña">
-                                    </div>
-                                    <div class="btn-next-con">
-                                        <a class="btn-next" href="#">Crear Maestro</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-
+                    <img src="../assets/img/ninos_optimizados.jpg" class="img-fluid">
                 </main>
             </div>
         </div>
@@ -131,14 +97,15 @@
             <div class="row">
                 <div class="col-10">
                     <ul class="footer-info">
-                        <li><a href="#"><img src="assets/img/icon-fb.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="assets/img/icon-twitter.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="assets/img/icon-mail.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/icon-fb.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/icon-twitter.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/icon-mail.png" alt="Facebook"></a></li>
                         <li><a href="mailto:contacto@puntoschool.com">contacto@puntoschool.com</a></li>
                     </ul>
                 </div>
                 <div class="col-2 footer-faq">
-                    <a href="#"><img src="assets/img/icon-faq.png" alt="faq icon"><span>Preguntas Frecuentes</span></a>
+                    <a href="#"><img src="../assets/img/icon-faq.png" alt="faq icon"><span>Preguntas
+                            Frecuentes</span></a>
                 </div>
             </div>
         </div>
@@ -150,10 +117,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="assets/vendor/js/bootstrap.min.js"
+    <script src="../assets/vendor/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src="assets/vendor/js/bootstrap.min.js"></script>
+    <script>$('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })</script>
 </body>
 
 
