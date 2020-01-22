@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/vendor/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendor/css/datatables.min.css" />
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -30,7 +31,8 @@
                             <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                             <i class="fas fa-user"></i>
                         </li>
-                        <li><i class="fas fa-sign-out-alt"></i></li>
+                        <li><a href="/progress_bar.html"><i class="fas fa-home"></i></a> </li>
+                        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -53,11 +55,12 @@
                                     <i class="fas fa-user mr-1"></i>
                                     <h5>José Martínez Fernández <span class="d-block">Dirección</span></h5>
                                 </li>
+                                <li><i class="fas fa-home"></i></li>
                                 <li><i class="fas fa-sign-out-alt"></i></li>
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="levels.html">
                                         <i class="fas fa-graduation-cap fa-fw"></i>
                                         <span>Niveles Escolares</span>
                                     </a>
@@ -98,15 +101,21 @@
                         <div class="row justify-content-center">
                             <div class="col-md-5 col-sm-8">
                                 <form action="" class="dash-form">
-                                    <input type="text" class="form-control" id="nombreMaestro"
-                                        placeholder="Nombre Completo">
-                                    <input type="text" class="form-control" id="telefonoMaestro"
-                                        placeholder="Número de teléfono">
-                                    <input type="email" class="form-control" id="correoMaestro"
-                                        placeholder="Correo Electrónico">
-                                    <input type="password" class="form-control" id="contrasenaMaestro"
-                                        placeholder="Contraseña">
-                                    <button class="btn btn-pink-gradient">Crear Maestro</button>
+                                    <div class="input-group">
+                                        <input class="input--style-1" type="text" name="nombreMaestro" placeholder="Nombre Completo">
+                                    </div>
+                                    <div class="input-group">
+                                        <input class="input--style-1" type="text" name="telefonoMaestro" placeholder="Número de teléfono">
+                                    </div>
+                                    <div class="input-group">
+                                        <input class="input--style-1" type="email" name="correoMaestro" placeholder="Correo Electrónico">
+                                    </div>
+                                    <div class="input-group">
+                                        <input class="input--style-1" type="password" name="contrasenaMaestro" placeholder="Contraseña">
+                                    </div>
+                                    <div class="btn-next-con">
+                                        <a class="btn-next" href="#">Crear Maestro</a>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -144,6 +153,7 @@
     <script src="assets/vendor/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="assets/vendor/js/bootstrap.min.js"></script>
 </body>
 
 
