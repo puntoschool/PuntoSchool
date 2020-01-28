@@ -50,6 +50,9 @@ body {
   color: #575756;
 }
 
+/*
+sass --watch public/assets/sass/main.scss:public/assets/css/main.css
+*/
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -115,6 +118,33 @@ a:hover {
 .btn-pink-gradient:hover {
   background-image: linear-gradient(to right, rgba(237, 109, 107, 0.65), #e93e8c);
   color: #ffffff;
+}
+
+.btn-border-pink {
+  text-align: center;
+  font-weight: 700;
+  color: #ed6d6b;
+  background: transparent;
+  padding: 1.3rem 2rem;
+  border: 2px solid #ed6d6b;
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 25px;
+  line-height: 1;
+}
+.btn-border-pink:hover {
+  color: #e93e8c;
+  border: 2px solid #e93e8c;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem !important;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.btn-plain {
+  color: #575756;
 }
 
 .btn-next-con {
@@ -689,8 +719,7 @@ a:hover {
 /* dashboard main */
 .dash-main {
   padding: 2rem;
-  min-height: calc(100vh - 140px);
-  overflow-y: scroll;
+  height: calc(100vh - 140px);
   overflow-x: hidden;
 }
 .dash-main .dash-title {
@@ -787,6 +816,7 @@ a:hover {
   font-size: 11rem;
   font-weight: 700;
   color: #36A9E1;
+  line-height: 1;
 }
 @media screen and (max-width: 420px) {
   .dash-welcome .title-welcome {
@@ -885,6 +915,209 @@ a:hover {
 .alumnos-list li a {
   float: right;
   color: #9d9d9c;
+}
+
+.tab-kids .nav-tabs .nav-item {
+  margin-bottom: -2px;
+}
+.tab-kids .nav-tabs {
+  border-bottom: 2px solid #c4c4c4;
+  flex-wrap: nowrap;
+}
+.tab-kids .nav-tabs .nav-link {
+  border: 2px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #9d9d9c;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  line-height: 1.2;
+}
+.tab-kids .nav-tabs .nav-link:hover {
+  color: #575756;
+}
+.tab-kids .nav-tabs .nav-link.active {
+  color: #ed6d6b;
+  background-color: transparent;
+  border-color: #c4c4c4 #c4c4c4 #fff;
+  border-radius: 0;
+}
+
+.inner-tab {
+  text-align: left;
+  padding: 2rem;
+  border: 2px solid #c4c4c4;
+  border-top: 0;
+}
+.inner-tab h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #c6c6c6;
+}
+
+.meeting-appointment {
+  background-color: #f6f6f6;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: left;
+  transition: all 1s;
+}
+.meeting-appointment:hover .meeting-arrow i {
+  margin-right: 1rem;
+}
+.meeting-appointment .meeting-info {
+  display: flex;
+  align-items: center;
+}
+.meeting-appointment .meeting-date {
+  background-image: linear-gradient(to right, #e93e8c, rgba(237, 109, 107, 0.65));
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.meeting-appointment .meeting-text h3 {
+  color: #575756;
+  font-size: 2rem;
+}
+.meeting-appointment .meeting-arrow {
+  color: #ed6d6b;
+  font-size: 2rem;
+}
+.meeting-appointment .meeting-arrow:hover {
+  color: #e93e8c;
+}
+
+.dashboard-meetings {
+  padding: 3rem;
+}
+.dashboard-meetings .meeting-kid {
+  color: #575756;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.dashboard-meetings .meeting-info {
+  color: #9d9d9c;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.dashboard-meetings .meeting-info span {
+  margin-left: 1rem;
+}
+.dashboard-meetings .video-meeting {
+  margin-bottom: 2rem;
+}
+.dashboard-meetings .video-meeting .meeting-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ed6d6b;
+  margin-bottom: 1rem;
+}
+.dashboard-meetings .video-list h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #575756;
+  margin-bottom: 2rem;
+}
+
+.meeting-text h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ed6d6b;
+  margin-bottom: 0.5rem;
+}
+.meeting-text h3 small {
+  font-weight: 300;
+  font-size: 0.8;
+  color: #9d9d9c;
+  margin-left: 1rem;
+}
+.meeting-text p {
+  color: #9d9d9c;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.meeting-text p i {
+  margin-right: 0.3rem;
+  color: #575756;
+}
+.meeting-text h6 {
+  color: #575756;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.meeting-comments {
+  border: 2px solid #ed6d6b;
+  border-radius: 25px;
+  padding: 2rem 1rem;
+  background: #ffffff;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.meeting-comments .comment {
+  margin-bottom: 1rem;
+}
+.meeting-comments .comment h5 {
+  color: #575756;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.meeting-comments .comment p {
+  color: #9d9d9c;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.meeting-input input {
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.meeting-input button {
+  background-color: transparent;
+  border: 0;
+  color: #ed6d6b;
+  font-size: 2.2rem;
+}
+
+.poll-collapse {
+  margin-top: 1rem;
+}
+.poll-collapse button {
+  border: 2px solid #ed6d6b;
+  border-bottom-color: #ffffff;
+  background: transparent;
+  color: #ed6d6b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+}
+.poll-collapse .inner-poll {
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid #ed6d6b;
+  margin-top: -2px;
 }
 
 /*.border-input {

@@ -1,3 +1,7 @@
+/*
+sass --watch public/assets/sass/main.scss:public/assets/css/main.css
+*/
+
 body {
     margin: 0;
     font-family: $default-font-family;
@@ -64,6 +68,33 @@ a:hover {
     background-image: linear-gradient(to right, rgba($color-pink-light,.65) , rgba($color-pink-dark,1));
     color: $color-white;
     }
+}
+
+.btn-border-pink {
+    text-align: center;
+    font-weight: 700;
+    color: $color-pink-light;
+    background: transparent;
+    padding: 1.3rem 2rem;
+    border: 2px solid $color-pink-light;
+    text-decoration: none;
+    transition: all .5s;
+    border-radius: 25px;
+    line-height: 1;
+    &:hover {
+    color: $color-pink-dark;
+    border: 2px solid $color-pink-dark;
+    }
+}
+
+.btn-sm {
+    padding: .5rem 1rem !important;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.btn-plain {
+    color: $color-grey-dark;
 }
 
 .btn-next-con {
