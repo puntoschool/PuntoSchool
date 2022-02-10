@@ -9,7 +9,7 @@
   "author": "punto school team",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "firebase": "^7.7.0"
